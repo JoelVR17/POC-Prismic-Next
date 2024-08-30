@@ -11,12 +11,12 @@ export interface NavigationDocumentDataNavigationItem {
   /**
    * Link field in *navigation → Navigation*
    *
-   * - **Field Type**: Link to Media
+   * - **Field Type**: Link
    * - **Placeholder**: *None*
    * - **API ID Path**: navigation.navigation[].link
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
-  link: prismic.LinkToMediaField;
+  link: prismic.LinkField;
 
   /**
    * Label field in *navigation → Navigation*
