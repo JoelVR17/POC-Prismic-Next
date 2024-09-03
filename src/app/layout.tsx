@@ -5,6 +5,7 @@ import clsx from "clsx";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Bounded from "@/components/Bounded";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -41,7 +42,7 @@ export default function RootLayout({
     <html lang="en" className={clsx(nunito.variable, nunitoSans.variable)}>
       <body>
         <Header />
-        {children}
+        <Bounded children={children} />
         <Footer />
       </body>
     </html>
